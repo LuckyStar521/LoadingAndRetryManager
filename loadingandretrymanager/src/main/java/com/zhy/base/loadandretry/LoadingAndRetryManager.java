@@ -89,6 +89,7 @@ public class LoadingAndRetryManager
         listener.setLoadingEvent(loadingAndRetryLayout.getLoadingView());
         listener.setEmptyEvent(loadingAndRetryLayout.getEmptyView());
         mLoadingAndRetryLayout = loadingAndRetryLayout;
+        showLoading();
     }
 
     private void setupEmptyLayout(OnLoadingAndRetryListener listener, LoadingAndRetryLayout loadingAndRetryLayout)
