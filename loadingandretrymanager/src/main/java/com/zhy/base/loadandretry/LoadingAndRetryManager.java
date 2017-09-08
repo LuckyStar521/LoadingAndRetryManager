@@ -136,10 +136,10 @@ public class LoadingAndRetryManager
             int layoutId = listener.generateRetryLayoutId();
             if (layoutId != NO_LAYOUT_ID)
             {
-                loadingAndRetryLayout.setLoadingView(layoutId);
+                loadingAndRetryLayout.setRetryView(layoutId);
             } else
             {
-                loadingAndRetryLayout.setLoadingView(listener.generateRetryLayout());
+                loadingAndRetryLayout.setRetryView(listener.generateRetryLayout());
             }
         } else
         {
